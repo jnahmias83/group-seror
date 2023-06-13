@@ -365,6 +365,7 @@ a:hover, .active {
 
 .container-prdt-img-desc .div-desc {
     width: 50%;
+    padding: 0 0 0 120px;
 }
 
 .container-prdt-img-desc img {
@@ -377,14 +378,15 @@ a:hover, .active {
 }
 
 .container-prdt-img-desc .div-desc .subtitle {
-    padding-top: 10px;
+    padding: 10px 0 20px 0;
     color: white;
     font-size: 26px;
 }
 
 .flex-inside {
-    padding-top: 20px;
+    padding: 0 0 0 20px;
     justify-content: space-between;
+    border: 1px solid white;
 }
 
 .div-icone-inside {
@@ -396,18 +398,52 @@ a:hover, .active {
     font-size: 40px;
 }
 
+.fa-folder-open,
+.fa-passport,
+.fa-ticket,
+.fa-globe,
+.fa-calendar-day,
+.fa-wine-glass,
+.fa-utensils {
+    padding: 30px;
+    font-size: 40px;
+    color: white;
+}
+
 .container-prdt-img-desc .div-desc p {
-    color:rgb(226, 220, 220);
+    color: white;
     font-size: 20px;
 }
 
 .container-criteria {
     width: 1200px;
     margin: auto;
-    background-color: olive;
+    background-color: black;
 }
 
-.container-criteria .criteria-item .flex-inside 
+.criteria-item {
+    padding: 10px;
+    width: 50%;
+}
+
+.flex-criteria  {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.container-criteria .criteria-item .flex-inside .div-icone-inside {
+    width: 25%;
+}
+
+.container-criteria .criteria-item .flex-inside .desc-inside {
+    color: white;
+    padding: 30px;
+}
+
+.container-prdt-img-desc .div-desc .flex-inside {
+    border: none;
+}
 
 .footer-title {
     font-weight: bold;
@@ -533,6 +569,41 @@ a:hover, .active {
         width: 100%;
     }
 
+    .container-top-menu {
+        width: 100%;
+    }
+
+    .container-connexion {
+        width: 100%;
+    }
+
+    .container-prdt-img-desc {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-criteria {
+        width: 100%;
+    }
+
+    .flex-top-menu {
+        flex-direction: column;
+    }
+
+    .left-menu ul li {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .right-menu ul li {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .flex-criteria {
+        flex-direction: column;
+    }
+
     .footer {
         width: 100%;
     }
@@ -654,6 +725,41 @@ a:hover, .active {
 
     .container-amitie-history { 
         width: 100%;
+    }
+
+    .container-top-menu {
+        width: 100%;
+    }
+
+    .container-connexion {
+        width: 100%;
+    }
+
+    .container-prdt-img-desc {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-criteria {
+        width: 100%;
+    }
+
+    .flex-top-menu {
+        flex-direction: column;
+    }
+
+    .left-menu ul li {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .right-menu ul li {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .flex-criteria {
+        flex-direction: column;
     }
 
     .footer {
@@ -791,6 +897,41 @@ a:hover, .active {
         width: 100%;
     }
 
+    .container-top-menu {
+        width: 100%;
+    }
+
+    .container-connexion {
+        width: 100%;
+    }
+
+    .container-prdt-img-desc {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-criteria {
+        width: 100%;
+    }
+
+    .flex-top-menu {
+        flex-direction: column;
+    }
+
+    .left-menu ul li {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .right-menu ul li {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .flex-criteria {
+        flex-direction: column;
+    }
+
     .footer {
         width: 100%;
         flex-wrap: wrap;
@@ -802,4 +943,3 @@ a:hover, .active {
         padding-bottom: 20px;
     }
 }
-
