@@ -14,11 +14,14 @@ ul {
     display: flex;
 }
 
+.section-become-member {
+    background: url('images/Winery.png') center/cover;
+}
+
 .container-become-member {
     width: 1200px;
     height: 500px;
     margin: auto;
-    background: url('images/Winery.png') center/cover;
     padding: 15px 10px 0 10px;
 }
 
@@ -65,8 +68,15 @@ a:hover, .active {
     width: 15%;
 }
 
-.container-concret {
+.black-section {
     background-color: black;
+} 
+
+.pack-section {
+    padding-top:30px;
+}
+
+.container-concret {
     width: 1200px;
     margin: auto;
     padding: 10px 0;
@@ -126,8 +136,9 @@ a:hover, .active {
     color: white;
     font-size: 18px;
     padding: 15px;
-    margin: 0 0 5px 3px;
+    margin: 0 0 15px 55px;
     border: 2px solid wheat;
+    display: inline-block;
 }
 
 .container-products {
@@ -304,10 +315,13 @@ a:hover, .active {
    padding-left: 40px;
 }
 
+.section-amitie-history {
+    background: url('images/Bg.png') center/cover;
+}
+
 .container-amitie-history {
     padding: 10px 5px 10px 5px;
     color: white;
-    background: url('images/Bg.png') center/cover;
     width: 1200px;
     margin: auto;
 }
@@ -482,6 +496,10 @@ a:hover, .active {
         height: 40px;
     }
 
+    .container-connexion .div-connexion .btn-connexion {
+        margin: 0 0 15px 5px;
+    }
+
     .container-concret {
         width: 100%;
         font-size: 28px;
@@ -624,6 +642,11 @@ a:hover, .active {
     .footer {
         width: 100%;
     }
+
+    .footer-item img {
+        width: 130px;
+        height: 45px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -655,6 +678,10 @@ a:hover, .active {
     .div-logo img {
         width: 180px;
         height: 40px;
+    }
+
+    .container-connexion .div-connexion .btn-connexion {
+        margin: 0 0 15px 5px;
     }
 
     .container-concret {
@@ -805,6 +832,11 @@ a:hover, .active {
     .footer-item {
         width: 50%;
         padding-bottom: 20px;
+    }
+
+    .footer-item img {
+        width: 130px;
+        height: 45px;
     }
 }
 
@@ -844,6 +876,10 @@ a:hover, .active {
         height: 26px;
     }
 
+    .container-connexion .div-connexion .btn-connexion {
+        margin: 0 0 15px 5px;
+    }
+
     .container-concret {
         width: 100%;
         font-size: 28px;
@@ -992,5 +1028,10 @@ a:hover, .active {
     .footer-item {
         width: 50%;
         padding-bottom: 20px;
+    }
+
+    .footer-item img {
+        width: 130px;
+        height: 45px;
     }
 }
