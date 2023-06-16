@@ -320,7 +320,7 @@ a:hover, .active {
 }
 
 .container-amitie-history {
-    padding: 10px 5px 10px 5px;
+    padding: 10px 15px;
     color: white;
     width: 1200px;
     margin: auto;
@@ -499,11 +499,11 @@ a:hover, .active {
     .container-connexion .div-connexion .btn-connexion {
         margin: 0 0 15px 5px;
     }
-
-    .container-concret {
-        width: 100%;
-        font-size: 28px;
-        padding: 10px;
+   
+   .container-concret {
+       font-size: 22px;
+       text-align: justify;
+        padding: 15px;
     }
 
     .menu-items ul li {
@@ -579,6 +579,18 @@ a:hover, .active {
         padding: 5px;
     }
 
+    .container-img-desc-1 .div-desc p,
+    .container-img-desc-2 .div-desc p,
+    .container-img-desc-3 .div-desc p,
+    .container-img-desc-4 .div-desc p    
+    {
+       padding: 0 30px;
+    }
+
+    .container-prdt-img-desc .div-desc p {
+        padding: 0 30px;
+    }
+
     .div-discover-wines {
         text-align: center;
     }
@@ -598,6 +610,7 @@ a:hover, .active {
     .container-prdt-img-desc {
         width: 100%;
         flex-direction: column;
+        padding-right: 20px;
     }
 
     .container-prdt-img-desc .div-desc {
@@ -618,7 +631,7 @@ a:hover, .active {
     }
 
     .criteria-item {
-        width: 100%;
+        width: 50%;
     }
 
     .flex-top-menu {
@@ -633,10 +646,6 @@ a:hover, .active {
     .right-menu ul li {
         display: block;
         margin-bottom: 40px;
-    }
-
-    .flex-criteria {
-        flex-direction: column;
     }
 
     .footer {
@@ -687,7 +696,7 @@ a:hover, .active {
     .container-concret {
         width: 100%;
         font-size: 28px;
-        padding: 10px;
+        padding: 15px;
     }
 
     .menu-items ul li {
@@ -763,6 +772,10 @@ a:hover, .active {
         padding: 5px;
     }
 
+    .container-prdt-img-desc .div-desc p {
+        padding: 0 30px;
+    }
+
     .div-discover-wines {
         text-align: center;
     }
@@ -801,8 +814,12 @@ a:hover, .active {
         width: 100%;
     }
 
+    .flex-criteria {
+        flex-wrap: wrap;
+    }
+
     .criteria-item {
-        width: 100%;
+        width: 48%;
     }
 
     .flex-top-menu {
@@ -820,7 +837,7 @@ a:hover, .active {
     }
 
     .flex-criteria {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .footer {
@@ -847,7 +864,7 @@ a:hover, .active {
     }
 
     .div-connexion {
-        width: 65%;
+        width: 75%;
         font-size: 12px;
     }
 
@@ -883,7 +900,7 @@ a:hover, .active {
     .container-concret {
         width: 100%;
         font-size: 28px;
-        padding: 10px;
+        padding: 15px;
     }
 
     .menu-items ul li {
@@ -963,6 +980,10 @@ a:hover, .active {
         text-align: center;
     }
 
+    .container-prdt-img-desc .div-desc p {
+        padding: 0 30px;
+    }
+
     .container-amitie-history { 
         width: 100%;
     }
@@ -998,7 +1019,7 @@ a:hover, .active {
     }
 
     .criteria-item {
-        width: 100%;
+        width: 95%;
     }
 
     .flex-top-menu {
