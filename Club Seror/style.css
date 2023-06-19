@@ -6,10 +6,6 @@ body {
     margin: 0px;
 }
 
-ul {
-    padding: 0;
-}
-
 .flex {
     display: flex;
 }
@@ -18,10 +14,13 @@ ul {
     background: url('images/Winery.png') center/cover;
 }
 
-.container-become-member {
+.container {
     width: 1200px;
-    height: 500px;
     margin: auto;
+}
+
+.container-become-member { 
+    height: 500px;  
     padding: 15px 10px 0 10px;
 }
 
@@ -34,11 +33,6 @@ ul {
     color: white;
     font-weight: bold;
     margin-right: 10px;
-}
-
-a:hover, .active {
-    border: 1px solid white;
-    padding: 10px;
 }
 
 .div-desc {
@@ -77,8 +71,6 @@ a:hover, .active {
 }
 
 .container-concret {
-    width: 1200px;
-    margin: auto;
     padding: 10px 0;
     text-align: center;
     color: rgba(230, 162, 35, 0.689);
@@ -87,7 +79,6 @@ a:hover, .active {
 
 .div-logo img {
     width: 150px;
-    height: 30px;
 }
 
 .btn-become-member {
@@ -120,9 +111,7 @@ a:hover, .active {
 
 .container-connexion {
     padding-top: 25px;
-    width: 1200px;
     height: 60px;
-    margin: auto;
     background-color: black;
 }
 
@@ -142,8 +131,6 @@ a:hover, .active {
 }
 
 .container-products {
-    width: 1200px;
-    margin: auto;
     background-color: black;
 }
 
@@ -151,7 +138,7 @@ a:hover, .active {
     width: 33%;
 }
 
-.container-item img {
+.container-item div img {
     height: 200px;
 }
 
@@ -186,7 +173,7 @@ a:hover, .active {
 .div-delivery {
     color: orange;
     font-size: 22px;
-    padding: 10px 2px 2px 120px;
+    text-align: center;
     height: 70px;
 }
 
@@ -197,43 +184,35 @@ a:hover, .active {
     font-style: italic;
 }
 
-.container-menu-1 {
-    width: 1200px;
-    margin: auto;
-    background-color: black;
+ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-.flex-menu-1 {
-    justify-content: center;
+nav {
+    padding-bottom: 50px;
 }
 
-.menu-items ul li {
-    display: inline-block;
+nav ul{
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu-items ul li a {
+nav ul li  {
     background-color: rgb(236, 161, 22);
-    font-size: 20px;
+    padding: 25px 10px;
+    width: 100%;
+    list-style: none;
+    text-align: center;
     color: white;
-    padding: 15px 20px;
-    border: none;
+    font-size: 20px;
 }
 
-.menu-items ul li .active, .menu-items ul li a:hover {
+nav ul li:hover, .active {
     background-color: rgb(149, 113, 46);
 }
 
-.menu-items ul li .logo {
-    background-color: black;
-}
-
-.menu-items ul li .logo img {
-    height: 50px;
-}
-
 .container-top-menu {
-    width: 1200px;
-    margin: auto;
     background-color: black;
 }
 
@@ -267,15 +246,13 @@ a:hover, .active {
     padding-top: 20%;
 }
 
-.container-img-desc-1,
-.container-img-desc-2,
-.container-img-desc-3,
-.container-img-desc-4
- {
-  padding: 20px 0 0 0;
-  background-color: black;
-  width: 1200px;
-  margin: auto;
+.vigne {
+    background: url('images/Vine.png') right/contain no-repeat;
+}
+
+.cork {
+  background: url('images/Cork.png') left/contain no-repeat;
+  justify-content: space-between;
 }
 
 .container-img-desc-1 .div-desc,
@@ -284,7 +261,6 @@ a:hover, .active {
 .container-img-desc-4 .div-desc   
 {
     width: 50%;
-    padding: 20px;
 }
 
 .container-img-desc-1 .div-desc h3,
@@ -322,8 +298,6 @@ a:hover, .active {
 .container-amitie-history {
     padding: 10px 15px;
     color: white;
-    width: 1200px;
-    margin: auto;
 }
 
 .container-amitie-history h3 {
@@ -344,8 +318,6 @@ a:hover, .active {
 }
 
 .footer {
-    width: 1200px;
-    margin: auto;
     padding: 30px;
     background-color: black;
     justify-content: space-around;
@@ -370,6 +342,7 @@ a:hover, .active {
     width: 1200px;
     margin: auto;
     background-color: black;
+    justify-content: space-between;
 }
 
 .container-prdt-img-desc .div-img {
@@ -379,7 +352,6 @@ a:hover, .active {
 
 .container-prdt-img-desc .div-desc {
     width: 50%;
-    padding: 0 0 0 120px;
 }
 
 .container-prdt-img-desc img {
@@ -388,11 +360,10 @@ a:hover, .active {
 
 .container-prdt-img-desc .div-desc .title {
     color: rgb(236, 161, 22);
-    font-size: 30px;
+    margin: 0px;
 }
 
 .container-prdt-img-desc .div-desc .subtitle {
-    padding: 10px 0 20px 0;
     color: white;
     font-size: 26px;
 }
@@ -430,8 +401,6 @@ a:hover, .active {
 }
 
 .container-criteria {
-    width: 1200px;
-    margin: auto;
     background-color: black;
 }
 
@@ -466,9 +435,16 @@ a:hover, .active {
 }
 
 @media screen and (max-width: 1024px) {
+    .container {
+        width: 100%
+    }
+
+    .pack-section {
+        padding-top: 0px;
+    }
+
     .container-become-member { 
         font-size: 20px;
-        width: 100%;
     }
 
     .div-connexion {
@@ -491,7 +467,7 @@ a:hover, .active {
         width: 25%;
     }
 
-    .div-logo img {
+    .div-logo div img {
         width: 180px;
         height: 40px;
     }
@@ -503,26 +479,11 @@ a:hover, .active {
    .container-concret {
        font-size: 22px;
        text-align: justify;
-        padding: 15px;
+       padding: 15px;
     }
-
-    .menu-items ul li {
-        display: block;
-        margin-bottom: 40px;
-    }
-
-    .menu-items ul li a {
-        font-size: 20px;
-        margin-right: 5px;  
-        padding: 15px 15px;
-    }
-
+  
     .flex-products {
         flex-direction: column;
-    }
-
-    .container-products { 
-        width: 100%;
     }
 
     .div-delivery {
@@ -538,21 +499,15 @@ a:hover, .active {
         text-align: center;
     }
 
-    .container-menu-1 {
-        width: 100%;
-    }
-
     .container-img-desc-1,
     .container-img-desc-3
     {
-        width: 100%;
         flex-direction: column;
     }
 
     .container-img-desc-2,
     .container-img-desc-4
     {
-        width: 100%;
         flex-direction: column-reverse;
     }
 
@@ -603,10 +558,6 @@ a:hover, .active {
         width: 100%;
     }
 
-    .container-connexion {
-        width: 100%;
-    }
-
     .container-prdt-img-desc {
         width: 100%;
         flex-direction: column;
@@ -614,7 +565,6 @@ a:hover, .active {
     }
 
     .container-prdt-img-desc .div-desc {
-        width: 100%;
         padding: 0 40px;
     }
 
@@ -659,9 +609,16 @@ a:hover, .active {
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        width: 10%0;
+    }
+
+    .pack-section {
+        padding-top: 0px;
+    }
+
     .container-become-member { 
-        font-size: 20px;
-        width: 100%;
+        font-size: 20px
     }
 
     .div-connexion {
@@ -684,7 +641,7 @@ a:hover, .active {
         width: 30%;
     }
 
-    .div-logo img {
+    .div-logo div img {
         width: 180px;
         height: 40px;
     }
@@ -694,28 +651,12 @@ a:hover, .active {
     }
 
     .container-concret {
-        width: 100%;
         font-size: 28px;
         padding: 15px;
     }
 
-    .menu-items ul li {
-        display: block;
-        margin-bottom: 40px;
-    }
-
-    .menu-items ul li a {
-        font-size: 20px;
-        margin-right: 5px;  
-        padding: 15px 15px;
-    }
-
     .flex-products {
         flex-direction: column;
-    }
-
-    .container-products { 
-        width: 100%;
     }
 
     .div-delivery {
@@ -731,21 +672,15 @@ a:hover, .active {
         text-align: center;
     }
 
-    .container-menu-1 {
-        width: 100%;
-    }
-
     .container-img-desc-1,
     .container-img-desc-3
     {
-        width: 100%;
         flex-direction: column;
     }
 
     .container-img-desc-2,
     .container-img-desc-4
     {
-        width: 100%;
         flex-direction: column-reverse;
     }
 
@@ -778,18 +713,6 @@ a:hover, .active {
 
     .div-discover-wines {
         text-align: center;
-    }
-
-    .container-amitie-history { 
-        width: 100%;
-    }
-
-    .container-top-menu {
-        width: 100%;
-    }
-
-    .container-connexion {
-        width: 100%;
     }
 
     .container-prdt-img-desc {
@@ -858,19 +781,32 @@ a:hover, .active {
 }
 
 @media screen and (max-width: 414px) {
+    .container {
+        width: 100%;
+    }
+
+    .pack-section {
+        padding-top: 0px;
+    }
+
     .container-become-member { 
         font-size: 20px;
         width: 100%;
     }
 
     .div-connexion {
+        width: 65%;
+        font-size: 15px;
+    }
+
+    .div-connexion-paques {
         width: 75%;
         font-size: 12px;
     }
 
     .container-become-member .div-desc {
         padding-left: 30px;
-        width: 50%;
+        width: 55%;
         font-size: 22px;
     }
 
@@ -880,7 +816,7 @@ a:hover, .active {
      
     .div-btn-become-member {
          padding-top: 15px;
-         width: 50%;
+         width: 45%;
          font-size: 22px;
     }
 
@@ -888,7 +824,7 @@ a:hover, .active {
         width: 35%;
     }
 
-    .div-logo img {
+    .div-logo div img {
         width: 120px;
         height: 26px;
     }
@@ -898,20 +834,8 @@ a:hover, .active {
     }
 
     .container-concret {
-        width: 100%;
         font-size: 28px;
         padding: 15px;
-    }
-
-    .menu-items ul li {
-        display: block;
-        margin-bottom: 40px;
-    }
-
-    .menu-items ul li a {
-        font-size: 20px;
-        margin-right: 5px;  
-        padding: 15px 15px;
     }
 
     .flex-products {
@@ -930,26 +854,24 @@ a:hover, .active {
       padding-bottom: 30px;
     }
 
+    nav ul {
+        flex-direction: column;
+    }
+
     .container-item {
         width: 100%;
         text-align: center;
     }
 
-    .container-menu-1 {
-        width: 100%;
-    }
-
     .container-img-desc-1,
     .container-img-desc-3
     {
-        width: 100%;
         flex-direction: column;
     }
 
     .container-img-desc-2,
     .container-img-desc-4
     {
-        width: 100%;
         flex-direction: column-reverse;
     }
 
