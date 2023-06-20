@@ -10,6 +10,56 @@ body {
     display: flex;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    align-items: center;
+    min-height: 70px;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+  padding: 26px;
+  color: white;
+  font-size: 22px;
+}
+
+.nav-item:hover, .active {
+    background-color: rgb(156, 96, 17);
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamberger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: black;
+    margin: 5px 10px
+}
+
 .section-become-member {
     background: url('images/Winery.png') center/cover;
 }
@@ -187,29 +237,6 @@ body {
 ul, li {
     margin: 0;
     padding: 0;
-}
-
-nav {
-    padding-bottom: 50px;
-}
-
-nav ul{
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul li  {
-    background-color: rgb(236, 161, 22);
-    padding: 25px 10px;
-    width: 100%;
-    list-style: none;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
-
-nav ul li:hover, .active {
-    background-color: rgb(149, 113, 46);
 }
 
 .container-top-menu {
@@ -613,6 +640,37 @@ nav ul li:hover, .active {
         width: 10%0;
     }
 
+    .hamberger {
+        display: block;
+    }
+
+    .hamberger.active .baar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamberger.active .baar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
     .pack-section {
         padding-top: 0px;
     }
@@ -783,6 +841,37 @@ nav ul li:hover, .active {
 @media screen and (max-width: 414px) {
     .container {
         width: 100%;
+    }
+
+    .hamberger {
+        display: block;
+    }
+
+    .hamberger.active .baar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamberger.active .baar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
     }
 
     .pack-section {
