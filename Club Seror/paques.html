@@ -12,15 +12,19 @@
     <title>Club Seror</title>
 </head>
 <body>
-  <section class="black-section">
-    <nav class="container">
-        <ul>
-          <li class="active"><a>Pack Essentiel</a></li>
-          <li><a>Pack Premium</a></li>
-          <li><a>Pack Milesime</a></li>
+    <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item active"><a>Pack Essentiel</a></li>
+          <li class="nav-item"><a>Pack Premium</a></li>
+          <li class="nav-item"><a>Pack Milesime</a></li>
         </ul>
+
+        <div class="hamberger" id="hamberger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
     </nav>
-  </section>
 
     <section class="black-section pack-section">
         <div class="container container-connexion flex">
@@ -212,3 +216,13 @@
       </section>
 </body>
 </html>
+
+<script>
+  const hamberger = document.querySelector(".hamberger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamberger.addEventListener("click", ()=> {
+    hamberger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  })
+</script>
