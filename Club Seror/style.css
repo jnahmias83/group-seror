@@ -10,6 +10,10 @@ body {
     display: flex;
 }
 
+.grey-section {
+    background-color: #2d2828;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -33,7 +37,7 @@ body {
   font-size: 22px;
 }
 
-.nav-item:hover, .active {
+.nav-item:hover, .navbar-middle ul li:hover,.active {
     background-color: rgb(156, 96, 17);
 }
 
@@ -55,9 +59,25 @@ body {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: black;
     margin: 5px 10px
+}
+
+.navbar-middle {
+    padding-bottom: 40px;
+}
+
+.navbar-middle ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar-middle ul li {
+    background-color: #eca116;
+    padding: 15px 50px;
+    font-size: 22px;
 }
 
 .section-become-member {
@@ -121,10 +141,12 @@ body {
 }
 
 .container-concret {
-    padding: 10px 0;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     color: rgba(230, 162, 35, 0.689);
     font-style: italic;
+    height: 50px;
 }
 
 .div-logo img {
@@ -329,12 +351,11 @@ ul, li {
 
 .container-amitie-history h3 {
     font-style: italic;
-    padding-left: 20px;
+    text-align: center;
 }
 
 .container-amitie-history p {
     font-style: italic;
-    padding-left: 20px;
     color:beige;
 }
 
@@ -466,6 +487,11 @@ ul, li {
         width: 100%
     }
 
+    .navbar-middle ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .pack-section {
         padding-top: 0px;
     }
@@ -503,10 +529,11 @@ ul, li {
         margin: 0 0 15px 5px;
     }
    
-   .container-concret {
+   .container-concret-index {
+       width: 98%;
        font-size: 22px;
-       text-align: justify;
-       padding: 15px;
+       text-align: center;
+       height: 100px;
     }
   
     .flex-products {
@@ -561,14 +588,6 @@ ul, li {
         padding: 5px;
     }
 
-    .container-img-desc-1 .div-desc p,
-    .container-img-desc-2 .div-desc p,
-    .container-img-desc-3 .div-desc p,
-    .container-img-desc-4 .div-desc p    
-    {
-       padding: 0 30px;
-    }
-
     .container-prdt-img-desc .div-desc p {
         padding: 0 30px;
     }
@@ -592,7 +611,8 @@ ul, li {
     }
 
     .container-prdt-img-desc .div-desc {
-        padding: 0 40px;
+        width: 90%;
+        text-align: center;
     }
 
     .container-prdt-img-desc .div-desc .title {
@@ -709,8 +729,14 @@ ul, li {
     }
 
     .container-concret {
-        font-size: 28px;
-        padding: 15px;
+        height: 90px;
+        font-size: 24px;
+    }
+
+    .container-concret-index {
+        width: 98%;
+        height: 150px;
+        font-size: 26px;
     }
 
     .flex-products {
@@ -895,7 +921,7 @@ ul, li {
 
     .container-become-member .div-desc {
         padding-left: 30px;
-        width: 55%;
+        width: 50%;
         font-size: 22px;
     }
 
@@ -905,7 +931,7 @@ ul, li {
      
     .div-btn-become-member {
          padding-top: 15px;
-         width: 45%;
+         width: 50%;
          font-size: 22px;
     }
 
@@ -923,8 +949,13 @@ ul, li {
     }
 
     .container-concret {
-        font-size: 28px;
-        padding: 15px;
+        width: 90%;
+        height: 120px;
+    }
+
+    .container-concret-index {
+        width: 90%;
+        height: 270px;
     }
 
     .flex-products {
@@ -984,7 +1015,6 @@ ul, li {
         text-align: center;
         letter-spacing: 2px;
         font-size: 23px;
-        padding: 5px;
     }
 
     .div-discover-wines {
